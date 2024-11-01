@@ -11,7 +11,7 @@ mongoose.connect('mongodb+srv://lenu0215:ahlam08@cluster0.1asuw.mongodb.net/?ret
   useUnifiedTopology: true,
 }).then(() => console.log('MongoDB connected'));
 const bcrypt = require('bcryptjs');
-   const User = require('./modals/User');
+   const User = require('./modals/user');
 
    app.post('/register', async (req, res) => {
      const { username, password } = req.body;
